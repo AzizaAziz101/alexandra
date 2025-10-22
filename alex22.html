@@ -65,7 +65,7 @@
       <a href="#about" class="block px-6 py-3 hover:bg-brand-light">Über mich</a>
       
       <a href="#contact" class="block px-6 py-3 hover:bg-brand-light">Kontakt</a>
-      <a href="#book" class="block px-6 py-3 font-semibold text-brand-blue">Book Now</a>
+      <a href="#book" class="block px-6 py-3 font-semibold text-brand-blue">Termin?</a>
     </div>
   </header>
 
@@ -94,7 +94,7 @@
 
 
   <!-- Über mich -->
-  <section id="about" class="bg-brand-dark py-20">
+  <section id="about" class="bg-[#46B56C] py-20">
     <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center px-4">
       <img src="119.jpg" alt="Über mich" class="w-full h-96 object-cover shadow" />
       <div>
@@ -137,7 +137,7 @@
 
 
 <!-- Bild rechts mit bogenförmigem Schnitt -->
-<section id="" class="bg-brand-dark container mx-auto py-20 px-4 flex justify-center">
+<section id="" class="bg-[#46B56C] container mx-auto py-20 px-4 flex justify-center">
   <div class="md:w-1/2 flex justify-center">
     <img src="Skelet.jpg" alt="Physiotherapie Berlin"
          class="w-2/3 md:w-1/2 lg:w-1/3 mx-auto rounded-t-full" />
@@ -160,8 +160,8 @@
         Jeweils 3 Minuten Fußweg
       </p>
       <p><span class="font-semibold">Email:</span><br>
-        <a href="mailto:info@physiocollective.de" class="text-brand-blue hover:underline">
-          info@physiocollective.de
+        <a href="mailto:info@physiocollective.de" class="text-green-600 hover:underline">
+          alexanra.physio.berlin@gmail.com
         </a>
       </p>
       <p><span class="font-semibold">Praxiszeiten:</span><br>
@@ -178,7 +178,7 @@
 
 
   <!-- Footer -->
-<footer class="bg-brand-dark text-white py-12">
+<footer class="bg-[#46B56C] text-white py-12">
   <div class="container mx-auto grid md:grid-cols-3 gap-12 px-4">
     <div>
       <h3 class="font-heading font-semibold text-lg mb-4">Physio Collective</h3>
@@ -241,23 +241,6 @@
       }
     });
   </script>
-
-    <script>
-  // PIN festlegen
-  const PIN = "12391"; // <-- hier die gewünschte PIN ändern
-
-  function askForPin() {
-    const userPin = prompt("Bitte geben Sie die PIN ein, um auf die Seite zuzugreifen:");
-    if(userPin !== PIN) {
-      alert("Falsche PIN. Zugriff verweigert.");
-      // Seite blockieren
-      document.body.innerHTML = "<h1 style='text-align:center;margin-top:20%;'>Zugriff verweigert</h1>";
-    }
-  }
-
-  // Seite prüfen beim Laden
-  window.onload = askForPin;
-</script>
 
 </body>
 </html>
