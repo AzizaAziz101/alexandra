@@ -258,22 +258,7 @@
     });
   </script>
 
-    <script>
-  // PIN festlegen
-  const PIN = "12391"; // <-- hier die gewünschte PIN ändern
 
-  function askForPin() {
-    const userPin = prompt("Bitte geben Sie die PIN ein, um auf die Seite zuzugreifen:");
-    if(userPin !== PIN) {
-      alert("Falsche PIN. Zugriff verweigert.");
-      // Seite blockieren
-      document.body.innerHTML = "<h1 style='text-align:center;margin-top:20%;'>Zugriff verweigert</h1>";
-    }
-  }
-
-  // Seite prüfen beim Laden
-  window.onload = askForPin;
-</script>
 
 </body>
 </html>
